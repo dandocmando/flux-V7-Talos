@@ -110,7 +110,7 @@ patches:
         extraArgs:
           rotate-server-certificates: true
         nodeIP:
-          validSubnets: ["10.0.0.0./24"]
+          validSubnets: ["10.0.0.0/24"]
 
   # Force nameserver
   - |-
@@ -167,7 +167,7 @@ controlPlane:
           extraArgs:
             listen-metrics-urls: http://0.0.0.0:2381
           advertisedSubnets:
-            - "10.0.0.0./24"
+            - "10.0.0.0/24"
 
     # Disable default API server admission plugins.
     - |-
